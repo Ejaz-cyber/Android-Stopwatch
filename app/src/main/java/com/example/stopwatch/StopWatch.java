@@ -91,9 +91,6 @@ public class StopWatch extends AppCompatActivity implements myRecyclerViewInterf
         int orientation = getResources().getConfiguration().orientation;
         if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
             // In landscape
-//            getWindow().setStatusBarColor(ContextCompat.getColor(StopWatch.this,R.color.mycolor));
-//            getWindow().setStatusBarColor(ContextCompat.getColor(StopWatch.this,R.color.mycolor));
-//            getWindow().setStatusBarColor(ContextCompat.getDrawable(R.drawable.bg_card_clock2));
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 Window window = getWindow();
