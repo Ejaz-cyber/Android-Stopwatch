@@ -6,11 +6,14 @@ import androidx.cardview.widget.CardView;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Animatable;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
@@ -34,7 +37,12 @@ public class MainActivity extends AppCompatActivity {
         //setting the animation
 //        cardView.setAnimation(atg);
 
-        
+        Window window = getWindow();
+        Drawable background = getResources().getDrawable(R.drawable.bg_splash);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setStatusBarColor(getResources().getColor(android.R.color.transparent));
+        window.setNavigationBarColor(getResources().getColor(android.R.color.transparent));
+        window.setBackgroundDrawable(background);
 
     }
 

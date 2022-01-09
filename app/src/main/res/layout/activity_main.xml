@@ -27,8 +27,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:cardBackgroundColor="@android:color/transparent"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="6dp"
+        app:cardElevation="0dp"
         app:contentPadding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +41,8 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:paddingBottom="10dp"
-            android:paddingTop="10dp">
+            android:paddingTop="10dp"
+            android:background="@android:color/transparent">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
                 android:fontFamily="@font/m_medium"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                android:text="StopWatch 2"
+                android:text="StopWatch"
                 android:textColor="@color/white"
                 android:textSize="28sp" />
 
